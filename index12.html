@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static relative and etc</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 70px;
+            width: 90px;
+            background-color: black;
+            color: red;
+            margin: 20px;
+        }
+        #div1{
+            position: static;
+            
+             }
+             #div2{
+            position: relative;
+            top: 40px;
+            left: 90px;
+            
+             }
+             #div3{
+            position: fixed;
+            top: 40px;
+            left: 90px;
+            
+             }
+             #div4{
+            position: absolute;
+            top: 40px;
+            left: 90px;
+            
+             }
+             
+             
+    </style>
+<body>
+    <div id="div1" class="box">division1</div>
+    <div id="div2" class="box">division2</div>
+    <div id="div3" class="box">division3</div>
+    <div id="div4" class="box">division4</div>
+</body>
+</html>

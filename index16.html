@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+       }
+       .box{
+        height: 30px;
+        width: 30px;
+        margin: 15px;
+        border: 3px solid black;
+       }
+       #heading{
+        text-align: none;
+       }
+       #container{
+        height: 600px;
+        width: 600px;
+        padding: 10px;
+        margin: 20px;
+        border: 3px solid black;
+        background-color: lavender;
+        color: black;
+        display: flex;
+        /*float: left;*/
+        flex-direction: row;/* u can use  row reverse ,column and column-reverse also */
+        justify-content: flex-start;/* u can use felx-end, center ,space-between,space-around,space-evenly */
+        flex-wrap: wrap;
+       }
+       #box1{
+        background-color: blue;
+       }
+       #box2{
+        background-color: red;
+       }
+       #box3{
+        background-color: green;
+       }
+       #box4{
+        background-color: brown;
+       }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flex container</h1>
+    <div id="container">
+    <div id="box1" class="box">flex item 1</div>
+    <div id="box2" class="box">flex item 2</div>
+    <div id="box3" class="box">flex item 3</div>
+    <div id="box4" class="box">flex item 4</div>
+    <div id="box5" class="box">flex item 5</div>
+    <div id="box6" class="box">flex item 6</div>
+    <div id="box" class="box">flex item 7</div>
+
+    </div>
+    
+</body>
+</html>

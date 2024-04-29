@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#sii{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(226, 17, 83);
+    color: #1a0c99;
+    visibility: visible;
+}

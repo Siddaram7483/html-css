@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition ,Animation and pseudo classes</title>
+    <style>
+         .pseudo{
+            height: 55px;
+            width: 100px;
+            border: 2px sloid blue;
+            border-radius: 10px;
+            background-color: yellow;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;/* u can do in various steps like steps(3)*/
+            transition-delay: 0s;
+            /* if u dont want to use all these u can use all in one set that is sorthand type like tarnsition: all 1s ease-in-out os */
+         }
+         .pseudo:hover{
+            height: 28px;
+            width: 80px;
+            border: 2px solid pink;
+            background-color: navy;
+         }
+         .pseudo:active{
+            height: 35px;
+            width: 80px;
+            background-color: black;
+         }
+    </style>
+</head>
+<body>
+    <button class="pseudo">clickMe</button>
+</body>
+</html>

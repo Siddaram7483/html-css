@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale in transform</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 5px;
+            border: 2px solid black;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition: all 2s ease-in 1s;
+            
+        }
+        
+        .box:hover {
+         transform: scaley(2);/* here we can use x,y  axis with scales like 2,3,4,5,6 */
+         transform: translate(50px, 50px);/* here  we can use -50px also if we need to trnaslate from left or right and also x,y axis */
+         transform: skewy(360deg);/* we can use degree with x and y axis also */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">scale</div>
+</body>
+</html>

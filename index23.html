@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations part 1</title>
+    <style>
+        .box {
+            height: 55px;
+            width: 100px;
+            border: 2px solid blue; /* Corrected the typo here */
+            border-radius: 10px;
+            background-color: yellow;
+            position: relative;
+            top: 10px;
+            left: 20px;
+
+           /* animation: ghumakkad;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            /* You can do in various steps like steps(3) */
+            animation-delay: 0s;
+            animation-iteration-count: infinite;/* u can add 1,2,3,4,5,6,6,7,8 times of count also  or u can add infinite*/
+            animation-direction: alternate; /* here u can add alternative-reverse, normal,alternative,reverse */
+            
+            
+            /* we can use the shorthand property means above all animation into single line */
+            animation: ghumakkad 1s ease-in-out 2s infinite alternate;
+        }
+
+        @keyframes ghumakkad {
+           from {
+                left: 10px;
+            }
+            to {
+                left: 2000px;
+            } /* we can use this type also
+            0%{ left: 10px; top: 0px;}
+            50%{ left: 150px; top: 100px;}
+            100%{ left: 300px; top: 0px;} */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">AnimateBox</div>
+</body>
+</html>

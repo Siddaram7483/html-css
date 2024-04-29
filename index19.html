@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    height: 25px;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+header {
+    background-color: palegreen;
+    height: 30px;
+}
+
+img {
+    height: 150px; /* Added 'px' unit */
+}
+
+#image_container {
+    border: 2px solid black;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box_container {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row; /* Added to stack boxes vertically */
+    align-items: center; /* Center-align items vertically */
+    height: 300px; /* Adjusted height to accommodate boxes */
+    justify-content: center;
+}
+.box {
+    width: 70px;
+    height: 75px;
+    border: 2px solid red;
+    margin: 10px; /* Added margin for spacing between boxes */
+    background-color: yellow;
+  }
+  #box2{
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-wrap: nowrap;
+
+  }
+  #media_box{
+    height: 50px;
+    width: 50px;
+    border: 2px solid yellow;
+    background-color: yellow;
+    
+  }
+  @media screen and (min-width: 300px) {
+    #media_box {
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 400px) {
+    #media_box {
+        background-color: red;
+    }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Support</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image_container">
+         <img src="image.png" alt="Map of Bharat">
+        </div>
+        <div id="box_container">
+            <div id="box1"  class="box">box1</div>
+            <div id="box2"  class="box">box2</div>
+            <div id="box3"  class="box">box3</div>
+        </div>
+        <br> <br> <hr>
+        <div id="media_box"> media box</div>
+    
+   <!-- <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div> -->
+    </main>
+</body>
+</html>

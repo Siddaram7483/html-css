@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex module</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+       }
+       .box{
+        height: 70px;
+        width: 100px;
+        margin: 15px;
+        border: 3px solid black;
+       }
+       #heading{
+        text-align: none;
+       }
+       #container{
+        height: 600px;
+        width: 600px;
+        padding: 10px;
+        margin: 20px;
+        border: 3px solid black;
+        background-color: lavender;
+        color: black;
+        display: flex;
+        flex-wrap: wrap-reverse;/* u can add flex-wrap,flex-wrap:nowwrap */
+        align-items: center;/* align the items like center,start,end */
+        align-content: center; /* same u can use start and end */
+        /* now the topic is align-self : center, flex-end,flex-start */
+        align-self: flex-start; 
+
+       }
+       #box6{
+        background-color: red;
+        flex-shrink: 10; /* for shrink u need to remove the wrap */
+        flex-grow: 0.5; /* increase in the item size */
+        order: 1;/* over raiding the original order of the items */
+       }
+        
+    </style>
+</head>
+<body>
+    <h1 id="heading">Flex container</h1>
+    <div id="container">
+    <div id="box1" class="box">flex item 1</div>
+    <div id="box2" class="box">flex item 2</div>
+    <div id="box3" class="box">flex item 3</div>
+    <div id="box4" class="box">flex item 4</div>
+    <div id="box5" class="box">flex item 5</div>
+    <div id="box6" class="box">flex item 6</div>
+    <div id="box" class="box">flex item 7</div>
+</body>
+</html>

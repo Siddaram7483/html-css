@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow,z-index relative,absolute </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 70px;
+            width: 90px;
+            background-color: black;
+            color: red;
+            margin: 20px;
+        }
+        #div1{
+            position: relative;
+            left: 40px;;
+            top: 50px;
+            z-index: 5;
+            overflow-y: scroll ;/* this will make scroll button on y axis */
+            overflow-x: scroll; /* this will make scroll button on x axis */
+        }
+        #div2{
+            z-index: 10;
+            position: relative;
+            left: 40px;
+            top: 50px;
+        }
+             
+             
+    </style>
+</head>
+<body>
+    <div id="div1" class="box">division1</div>
+    <div id="div2" class="box">division2</div>
+    <div id="div3" class="box">division3</div>
+    <div id="div4" class="box">division4</div>
+</body>
+</html>
